@@ -30,6 +30,7 @@ public:
         for (int i = 0; i < nums.size(); ++i)
         {
             auto it = hashtable.find(target - nums[i]);
+            
             if (it != hashtable.end())
             {
                 return {it->second, i};
